@@ -193,7 +193,7 @@ Communications and submissions may be made either in French or in English. </p>
 						 <li>12h-12h30 	Flash presentations to introduce posters</li>	
 						 <li>12h30-14h	** Lunch and Posters ** </li>	
 						 <li>14h-17h30 	HPC Storage and Lustre </li>	
-						 <li>18h-20h 	Casual networking at <a href="https://maps.app.goo.gl/7BaetC3nix9dKeWP7">Le Vin Sobre</a> (2 minutes walk)></li>	
+						 <li>18h-20h 	Casual networking at <a href="https://maps.app.goo.gl/7BaetC3nix9dKeWP7"> Le Vin Sobre</a> (2 minutes walk)</li>	
 					</ul>
 					</b>
 					</p>	
@@ -219,17 +219,17 @@ Communications and submissions may be made either in French or in English. </p>
 
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/speaker_m.png" class="img-responsive" alt="program">
+							<img src="images/philippe_nicolas.jpeg" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
 								<span><i class="fa fa-clock-o"></i> 9h00 </span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
+							<h2> Overview of the Storage landscape: Status and evolution </h2>
+							<h3> Philippe Nicolas, StorageNewsletter, The French Storage Podcast</h3>
+                            				<p> The French Storage Podcast, also known as TFSP, is a podcast that focuses on data, data management, and storage. It's an international podcast hosted by Philippe Nicolas, an industry observer with over 30 years of experience.  </p>
 							<h3>Leveraging Non-Volatile Main Memory to store the state of Cloud applications reliably</h3>
-							<h4>Thomas Ropars, INRIA</h4>
-                            				<p> Non-Volatile Main Memory (NVMM) technologies provide persistent storage in main memory. While being able to retain data over crashes and reboots, they offer performance that are close to DRAM. They are a great opportunity to store the state of Cloud applications in such a way that they could survive server crashes. However, storing data in NVMM reliably requires managing carefully the different level of caches that are present between the processor and the memory.
-In this talk, I will present an overview of different techniques we developed to efficiently and reliably store snapshots of running applications in NVMM. These techniques allow us to save data either in local NVMM or in remote NVMM accessed through RDMA, while ensuring that we are always able to recover the state of the application in the event of a crash. We will show that depending on the hardware configuration, the key to achieve high performance in storing data to NVMM differs. Experiments show that, on an application such as Memcached, the overhead induced by our techniques can be as low as 5% even when saving the state of the application several times per second.</p>
 						</div>
 						
 						<!-- program speaker here -->
@@ -242,8 +242,8 @@ In this talk, I will present an overview of different techniques we developed to
 								<span><i class="fa fa-clock-o"></i> 9h25 </span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
+							<h2> Designing & operating a large-scale S3 object- storage infrastructure at OVHcloud</h2>
                             				<h3> Antonin Goude, Romain de Joux, OVH Cloud</h3>
-							<h4> Designing & operating a large-scale S3 object- storage infrastructure at OVHcloud</h4>
 							<p>  Knowing hardware disks evolution and performance limitation, discover how we tackle this industrial challenge to deliver a state-of-the-art managed and ultra-scalable S3 infrastructure. 
 							[to be detailed further]</p>
 						</div>
@@ -260,8 +260,8 @@ In this talk, I will present an overview of different techniques we developed to
 								<span><i class="fa fa-clock-o"></i> 9h50 </span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
+							<h2>  Hestia: the IO-SEA HSM API</h2>
 							<h3> Katie O'Connor, University of Galway</h3>
-							<h4>  Hestia: the IO-SEA HSM API</h4>
                             				<p> The goal of the IO-SEA project is to develop solutions to the challenge of data storage in Exascale computing. IO-SEA implements a Hierarchical storage management (HSM) solution to balance storage costs with capacity and performance needs for large volumes of data.
 
 Hestia (Hierarchical Storage Tiers Interface for Applications) manages the movement of data between the different devices, called ‘tiers’, through use of the HSM API. The HSM public API allows the user to create objects, put and get data from the object stores, and remove objects. The private API allows a policy engine to copy and move data between the tiers.
@@ -287,16 +287,17 @@ Hestia can manage data movement through various object store backends with the u
 
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/philippe_nicolas.jpeg" class="img-responsive" alt="program">
+							<img src="images/inria.png" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
 								<span><i class="fa fa-clock-o"></i> 10h40 </span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h3> Philippe Nicolas, StorageNewsletter, The French Storage Podcast</h3>
-							<h4> Overview of the Storage landscape: Status and evolution  </h4>
-                            				<p> TO BE ANNOUNCED </p>
+							<h2>Leveraging Non-Volatile Main Memory to store the state of Cloud applications reliably</h2>
+							<h3>Thomas Ropars, INRIA</h3>
+                            				<p> Non-Volatile Main Memory (NVMM) technologies provide persistent storage in main memory. While being able to retain data over crashes and reboots, they offer performance that are close to DRAM. They are a great opportunity to store the state of Cloud applications in such a way that they could survive server crashes. However, storing data in NVMM reliably requires managing carefully the different level of caches that are present between the processor and the memory.
+In this talk, I will present an overview of different techniques we developed to efficiently and reliably store snapshots of running applications in NVMM. These techniques allow us to save data either in local NVMM or in remote NVMM accessed through RDMA, while ensuring that we are always able to recover the state of the application in the event of a crash. We will show that depending on the hardware configuration, the key to achieve high performance in storing data to NVMM differs. Experiments show that, on an application such as Memcached, the overhead induced by our techniques can be as low as 5% even when saving the state of the application several times per second.</p>
 						</div>
 
 						<!-- program divider -->
@@ -311,10 +312,7 @@ Hestia can manage data movement through various object store backends with the u
 								<span><i class="fa fa-clock-o"></i> 11h05</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h3> TO BE ANNOUNCED </h3>
 							<h4> TO BE ANNOUNCED </h4>
-							<p> TO BE ANNOUNCED </p>
-						<h4> <a href="material/Per3s_2023_Thomas_Lambert.pdf">Slides of the presentation</a>. </h4>
 						</div>
 
 						<!-- program divider -->
@@ -329,10 +327,7 @@ Hestia can manage data movement through various object store backends with the u
 								<span><i class="fa fa-clock-o"></i> 11h30</span> 
 								<span><i class="fa fa-map-marker"></i> Amphi Thévenin</span>
 							</h6>
-							<h3> TO be announced </h3>
 							<h4> TO BE ANNOUNCED </h4>
-							<p> TO BE ANNOUNCED </p>
-						<h4> <a href="material/Per3s_2023_Fotis_Nikolaidis.pdf">Slides of the presentation</a>. </h4>
 						</div>
 
 					</div>
@@ -347,8 +342,8 @@ Hestia can manage data movement through various object store backends with the u
 								<span><i class="fa fa-clock-o"></i> 12h00</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
+							<h2> GrIOt: Graph-based Modeling of HPC Application I/O Call Stacks for Predictive Prefetch </h2>
 							<h3> Louis-Marie Nicolas, ENSTA / Atos </h3>
-							<h4> GrIOt: Graph-based Modeling of HPC Application I/O Call Stacks for Predictive Prefetch </h4>
 							<p> Modern High Performance Computing (HPC) storage systems use heterogeneous storage technologies organized in tiers to find a compromise between capacity, performance, and cost. In these systems, prefetching is a common technique used to move the right data at the right moment from a slow to a fast tier to improve the overall performance while using the costly high-performance tier only when needed. Effective prefetching requires precise knowledge of the application I/O patterns. This knowledge can be extracted through the source code, I/O tracing tools or I/O functions call stacks. State-of-the-art solutions based on the latter approach mainly focus on applications with regular I/O profiles to avoid scalability issues due to the grammar-based techniques used. In this paper, we present an approach based on I/O call stacks that models I/O patterns for both regular and irregular applications, thanks to the use of directed graphs. We present different models for prefetching. Our models were used to predict the next I/O call stack on two real HPC applications and one synthetic workload with an accuracy of up to 98%, while keeping a low overhead. </p>
 						</div>
 
@@ -364,11 +359,9 @@ Hestia can manage data movement through various object store backends with the u
 								<span><i class="fa fa-clock-o"></i> 12h05 </span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
+							<h2> HeROfake: Heterogeneous Resources Orchestration in a Serverless Cloud: An Application to Deepfake Detection </h2>
 							<h3> Vincent Lannurien, UBO, Lab-Sticc </h3>
-							<h4> HeROfake: Heterogeneous Resources Orchestration in a Serverless Cloud: An Application to Deepfake Detection </h4>
-							<p> The Case of IDS
-
-Intrusion Detection Systems (IDS) are time-sensitive applications that aim to classify potentially malicious network traffic. IDSs are part of a class of applications that rely on short-lived functions that can be run reactively and, as such, could be deployed on edge resources, to offload processing from energy-constrained battery-backed devices. The serverless service model could fit the needs of such applications, given that the platform allows adequate levels of Quality of Service (QoS) for a variety of users, since the criticality of IDS applications depends on several parameters. Deploying serverless functions on unreserved edge resources requires to pay particular attention to (1) initialization delays that could be significant on low resources platforms, (2) inter-function communication between edge nodes, and (3) heterogeneous devices. In this paper, we propose both a storage-aware allocation and scheduling policy that seek to minimize task placement costs for service providers on edge devices while optimizing QoS for IDS users. To do so, we propose a caching and consolidation strategy that minimizes cold starts and inter-function communication delays while satisfying QoS by leveraging heterogeneous edge resources. We evaluated our platform in a simulation environment using characterization data from real-world IDS tasks and execution platforms and compared it with a vanilla Knative orchestrator and a storage-agnostic policy. Our strategy achieves 18% fewer QoS penalties while consolidating applications across 80% fewer edge nodes.</p>
+							<p> The Case of IDS: Intrusion Detection Systems (IDS) are time-sensitive applications that aim to classify potentially malicious network traffic. IDSs are part of a class of applications that rely on short-lived functions that can be run reactively and, as such, could be deployed on edge resources, to offload processing from energy-constrained battery-backed devices. The serverless service model could fit the needs of such applications, given that the platform allows adequate levels of Quality of Service (QoS) for a variety of users, since the criticality of IDS applications depends on several parameters. Deploying serverless functions on unreserved edge resources requires to pay particular attention to (1) initialization delays that could be significant on low resources platforms, (2) inter-function communication between edge nodes, and (3) heterogeneous devices. In this paper, we propose both a storage-aware allocation and scheduling policy that seek to minimize task placement costs for service providers on edge devices while optimizing QoS for IDS users. To do so, we propose a caching and consolidation strategy that minimizes cold starts and inter-function communication delays while satisfying QoS by leveraging heterogeneous edge resources. We evaluated our platform in a simulation environment using characterization data from real-world IDS tasks and execution platforms and compared it with a vanilla Knative orchestrator and a storage-agnostic policy. Our strategy achieves 18% fewer QoS penalties while consolidating applications across 80% fewer edge nodes.</p>
 						</div>
 
 						<!-- program divider -->
@@ -385,7 +378,6 @@ Intrusion Detection Systems (IDS) are time-sensitive applications that aim to cl
 							</h6>
 							<h3> Mohammad Rizk </h3>
 							<h4> to be announced </h4>
-							<p> TO BE ANNOUNCED </p>
 						</div>
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
@@ -401,7 +393,6 @@ Intrusion Detection Systems (IDS) are time-sensitive applications that aim to cl
 							</h6>
 							<h3> Marc Tranzer, INRIA </h3>
 							<h4> to be announced </h4>
-							<p>  TO BE ANNOUNCED </p>
 						</div>
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
@@ -452,7 +443,6 @@ We propose VoliMem, a user-space runtime that relies on virtualization to provid
 							</h6>
 							<h3> Thomas Collignon, Qarnot / INRIA  </h3>
 							<h4> to be announced </h4>
-							<p> TO BE ANNOUNCED </p>
 						</div>
 
 						<!-- program divider -->
@@ -467,9 +457,7 @@ We propose VoliMem, a user-space runtime that relies on virtualization to provid
 								<span><i class="fa fa-clock-o"></i> 12h35</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h3> To be announced </h3>
 							<h4> To be announced </h4>
-							<p> TO BE ANNOUNCED </p>
 						</div>
 
 					</div>
@@ -489,8 +477,8 @@ We propose VoliMem, a user-space runtime that relies on virtualization to provid
 								<span><i class="fa fa-clock-o"></i> 14h00</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session </span>
 							</h6>
-							<h3>Lustre: status and path forward </h3>
-							<h4>Sebastien Buisson, Whamcloud</h4>
+							<h2>Lustre: status and path forward </h2>
+							<h3>Sebastien Buisson, Whamcloud</h3>
 							<p> Lustre is the leading open-source and open-development file system for HPC. Around two thirds of the top 100 supercomputers use Lustre. It is a community developed technology with contributors from around the world. Lustre currently supports many HPC infrastructures beyond scientific research, such as financial services, energy, manufacturing, and life sciences and in recent years has been leveraged by cloud solutions to bring its performance benefits to a variety of new use cases (particularly relating to AI). This talk will reflect on the current state of the Lustre ecosystem and also will include the latest news relating to Lustre community releases (LTS releases and major releases), the roadmap, and details of features under development.</p>
 						</div>
 
@@ -506,9 +494,9 @@ We propose VoliMem, a user-space runtime that relies on virtualization to provid
 								<span><i class="fa fa-clock-o"></i> 14h30</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h3> DAOS: Status and path forward </h3>
-							<h4> Johann Lombardi </h4>
-							<p> To be detailed </p>
+							<h2> DAOS Community Update </h2>
+							<h3> Johann Lombardi, Senior Storage Architect</h3>
+							<p> This presentation will provide an overview of the DAOS architecture and how it has evolved over time to grow beyond persistent memory. The DAOS performance leadership will then be showcased via recent performance results from IO500. Finally, we will present the structure of the DAOS Foundation and some interesting upcoming DAOS features.</p>
 						</div>
 
 						<!-- program divider -->
@@ -523,8 +511,8 @@ We propose VoliMem, a user-space runtime that relies on virtualization to provid
 								<span><i class="fa fa-clock-o"></i> 15h</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
+							<h2> Large Scale Workflow in the EXA-AToW project</h2>
 							<h3> François Bodin, IRISA </h3>
-							<h4> Large Scale Workflow in the EXA-AToW project</h4>
 							<p> The EXA-AToW project investigates large-scale scientific workflows as a collaborative system of systems. In this perspective, workflows are distributed across various infrastructures, necessitating a cohesive approach that aligns with the cybersecurity constraints of each system. Moreover, to orchestrate workflows and manage data logistics effectively, we are developing the concept of a "Machine-Actionable Data Management Plan.</p>
 						</div>
 
@@ -552,8 +540,8 @@ We propose VoliMem, a user-space runtime that relies on virtualization to provid
 								<span><i class="fa fa-clock-o"></i> 16h00</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h3> Francieli Boito </h3>
-							<h4>  Research on HPC I/O in the context of the PEPR NumPEx project</h4>
+							<h2>  Research on HPC I/O in the context of the PEPR NumPEx project</h2>
+							<h3> Francieli Boito, University of Bordeaux </h3>
 							<p> The French NumPEx project aims at conceiving and developing the software stack of future exascale systems. In this talk, I will present an overview of the activities planned to prepare the exascale I/O system. The goal is a system that can adapt to applications - and not the other way around - through smart scheduling and resource allocation decisions.</p>
 						</div>
 
@@ -568,23 +556,23 @@ We propose VoliMem, a user-space runtime that relies on virtualization to provid
 								<span><i class="fa fa-clock-o"></i> 16h30 </span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
+							<h2> The storage challenge of SKA's Science Data Processing </h2>
 							<h3> Shan Mignot, Observatoire Cote d'Azur </h3>
-							<h4> The storage challenge of SKA's Science Data Processing </h4>
 							<p> The two SKA radio-telescopes currently under construction in South Africa and Australia will observe the Universe, respectively in a medium frequency range (Mid: 350 MHz-15.4 GHz) and a low one (Low: 50-350 MHz), using phased arrays of antennas. For the purpose of achieving high angular resolution and extreme sensitivity, these arrays are planned to total 197 15m parabolas for Mid and 512 stations comprising 256 antennas each for Low by the end of phase 1 of the construction. Digitising the incoming radio waves at sub-nanosecond resolution will lead to 18.7 and 1700 Tb/s of raw data. Managing such data flows will require significant computing and storage capabilities in order to reduce them for transmission, archiving and analysis. The SKA relies on three infrastructures to condition, reduce and finally analyse this data for each telescope: the Central Signal Processor, the Science Data Processor and the Science Regional Centre Network. I will present SKA’s overall data management then focus on the Science Data Processor in terms of volumes, access and analysis of the data.</p>
 						</div>
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/inria.png" class="img-responsive" alt="program">
+							<img src="images/jakob-luettgau.jpg" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
 								<span><i class="fa fa-clock-o"></i> 17h </span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
+							<h2> Enabling Agile Analysis of I/O Performance Data with PyDarshan and IOBAT </h2>
 							<h3> Jakob Lüttgau, INRIA</h3>
-							<h4> Enabling Agile Analysis of I/O Performance Data with PyDarshan and IOBAT </h4>
 							<p> Scientific applications utilize numerous software and hardware layers to efficiently access data. This is challenging for I/O optimization because of the need to instrument and correlate information across multiple layers. The Darshan characterization tool seeks to address this challenge by providing efficient, transparent, and compact runtime instrumentation of many common I/O interfaces. While there are command-line tools to generate actionable insights and summary reports, the extreme diversity of today’s scientific applications means that not all applications are well served by one-size-fits-all analysis tools.
 
 In this talk we present PyDarshan and IOBAT, to enable agile I/O analysis through Python-based libraries and novel interactive tools for I/O performance data. PyDarshan caters to both novice and advanced users by offering ready-to-use HTML reports as well as a rich collection of APIs to facilitate custom analyses. We demonstrate the effectiveness through multiple real-world analysis use cases</p>
