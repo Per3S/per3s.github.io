@@ -407,7 +407,12 @@ In this talk, I will present an overview of different techniques we developed to
 							</h6>
 							<h2> Tracing for Exascale </h2>
 							<h3> Catherine Guelque, Télécom SudParis </h3>
-							<p> To be announced </p>
+							<p> Traces are used in HPC for post-mortem performance analysis. It is a useful tool for investigating performance problems of applications. However, identifying a performance bottleneck often requires collecting lots of information, which causes the trace to become huge. This problem gets worse for large-scale applications that run many threads for a long time.
+In addition to the problem of storing these large traces, another problem arises when analyzing them to identify problems. The analysis tool needs to process gigabytes, or even terabytes of data, which is time-consuming. However, it has been shown that many HPC applications have recurring patterns, that time data is the heaviest part of a trace, and that similar events have similar duration, meaning they can be efficiently compressed.
+
+We propose a new trace format named Pallas, which uses the regularity of HPC applications to provide both quick and efficient post-mortem analysis and light traces.
+Pallas is a library that provides tracing tools with event storage functionalities.
+When writing a trace, Pallas automatically detects patterns, and stores statistical data for later analysis. The trace is then stored by separating the timestamps from the structure. This allows loading and analyzing the structure separately from the timestamps, which grants near-instantaneous analysis when the timestamps are not needed.</p>
 						</div>
 
 						<!-- program divider -->
@@ -440,8 +445,9 @@ We propose VoliMem, a user-space runtime that relies on virtualization to provid
 								<span><i class="fa fa-clock-o"></i> 12h30</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h3> Thomas Collignon, Qarnot / INRIA  </h3>
-							<h4> to be announced </h4>
+							<h3> Thomas Collignon, Qarnot / INRIA  Spiral</h3>
+							<h4> Using Control Theory to Reduce FileSystem Congestion Caused by Unpredictable I/O in Cloud Computing</h4>
+							<p> In the context of distributed cloud computing systems, computing nodes often share stockage resources through shared file systems. Some computations can have strict requirements regarding I/O so it appears necessary to avoid any congestion or saturation of the file system. It can be mitigated with an a priori knowledge of the I/O profiles of computing jobs and traditional scheduling methods. However, in some contexts of cloud computing, like the Qarnot one, the same storage resources can be used to perform lower priority tasks than calculations such as downloading input data for next tasks, deleting cached data or task checkpointing. Those additional tasks generate inherently dynamic and unpredictable traffic that can disturb efficiently established scheduling strategies. This can lead to a performance degradation and an energy overconsumption that we want to avoid. With the induced traffic being unpredictable, we believe that control theory is a good candidate to address this problem. In this work, we explore how suitable this strategy is by choosing the most relevant sensors and actuators for controlling the system dynamically and at runtime.</p>
 						</div>
 
 						<!-- program divider -->
