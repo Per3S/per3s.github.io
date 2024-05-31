@@ -229,6 +229,7 @@ Communications and submissions may be made either in French or in English. </p>
 							<h2> Overview of the Storage landscape: Trends, Evolution and Key Developments</h2>
 							<h3> Philippe Nicolas, Coldago Resarch, StorageNewsletter &The French Storage Podcast</h3>
                             				<p> The French Storage Podcast, also known as TFSP, is a podcast that focuses on data, data management, and storage. It's an international podcast hosted by Philippe Nicolas, an industry observer with over 30 years of experience. During the last decade and even more, under the pressure of new workloads and IT challenges, we all saw several developments in the data storage industry at various levels, hardware, media, networking, processors, software and even architecture with also new players. This talk selects some key examples in the recent storage timeline to illustrate this evolution and forces behind. </p>
+							<h4> <a href="material/2024_per3s_Coldago.pdf">Slides of the presentation</a>. </h4>
 						</div>
 						
 						<!-- program speaker here -->
@@ -262,6 +263,7 @@ Communications and submissions may be made either in French or in English. </p>
 							<h2>  Hestia: the IO-SEA HSM API</h2>
 							<h3> Katie O'Connor, University of Galway</h3>
                             				<p> The goal of the IO-SEA project is to develop solutions to the challenge of data storage in Exascale computing. IO-SEA implements a Hierarchical storage management (HSM) solution to balance storage costs with capacity and performance needs for large volumes of data.  Hestia (Hierarchical Storage Tiers Interface for Applications) manages the movement of data between the different devices, called ‘tiers’, through use of the HSM API. The HSM public API allows the user to create objects, put and get data from the object stores, and remove objects. The private API allows a policy engine to copy and move data between the tiers. Hestia can manage data movement through various object store backends with the use of the Hestia CopyTool and a config file passed in on launching the Hestia server. This allows for the movement of data between different backends, be they multi-tiered or single-tiered, seamlessly, without the need for the user to worry about them. Currently, Hestia has interfaces for Cortx-Motr HSM object store, Phobos tape object store and Amazon S3. Hestia is currently in beta; the most recent release is version 1.3</p>
+							<h4> <a href="material/2024_per3s_Katie_O_Connor.pdf">Slides of the presentation</a>. </h4>
 						</div>
 
 						<!-- program divider -->
@@ -293,6 +295,7 @@ Communications and submissions may be made either in French or in English. </p>
 							<h3>Thomas Ropars, INRIA</h3>
                             				<p> Non-Volatile Main Memory (NVMM) technologies provide persistent storage in main memory. While being able to retain data over crashes and reboots, they offer performance that are close to DRAM. They are a great opportunity to store the state of Cloud applications in such a way that they could survive server crashes. However, storing data in NVMM reliably requires managing carefully the different level of caches that are present between the processor and the memory.
 In this talk, I will present an overview of different techniques we developed to efficiently and reliably store snapshots of running applications in NVMM. These techniques allow us to save data either in local NVMM or in remote NVMM accessed through RDMA, while ensuring that we are always able to recover the state of the application in the event of a crash. We will show that depending on the hardware configuration, the key to achieve high performance in storing data to NVMM differs. Experiments show that, on an application such as Memcached, the overhead induced by our techniques can be as low as 5% even when saving the state of the application several times per second.</p>
+							<h4> <a href="material/2024_per3s_tropars.pdf">Slides of the presentation</a>. </h4>
 						</div>
 
 						<!-- program divider -->
@@ -310,6 +313,7 @@ In this talk, I will present an overview of different techniques we developed to
 							<h2> HeROcache: Storage-Aware Scheduling in Heterogeneous Serverless Edge -- The Case of IDS </h2>
 							<h3> Vincent Lannurien, ENSTA</h3>
 							<p> The Case of IDS: Intrusion Detection Systems (IDS) are time-sensitive applications that aim to classify potentially malicious network traffic. IDSs are part of a class of applications that rely on short-lived functions that can be run reactively and, as such, could be deployed on edge resources, to offload processing from energy-constrained battery-backed devices. The serverless service model could fit the needs of such applications, given that the platform allows adequate levels of Quality of Service (QoS) for a variety of users, since the criticality of IDS applications depends on several parameters. Deploying serverless functions on unreserved edge resources requires to pay particular attention to (1) initialization delays that could be significant on low resources platforms, (2) inter-function communication between edge nodes, and (3) heterogeneous devices. In this paper, we propose both a storage-aware allocation and scheduling policy that seek to minimize task placement costs for service providers on edge devices while optimizing QoS for IDS users. To do so, we propose a caching and consolidation strategy that minimizes cold starts and inter-function communication delays while satisfying QoS by leveraging heterogeneous edge resources. We evaluated our platform in a simulation environment using characterization data from real-world IDS tasks and execution platforms and compared it with a vanilla Knative orchestrator and a storage-agnostic policy. Our strategy achieves 18% fewer QoS penalties while consolidating applications across 80% fewer edge nodes.</p>
+							<h4> <a href="material/2024_per3s_Vincent_Lannurien.pdf">Slides of the presentation</a>. </h4>
 
 						</div>
 
@@ -330,6 +334,7 @@ In this talk, I will present an overview of different techniques we developed to
 							<p> 
 							Cloud providers are defining a new model for data centers dedicated to AI workloads. Such Cloud infrastructures have specific storage requirements. The core of the infrastructure is a datalake of potentially considerable capacity. This lakes hosts diverse data, both in terms of format or size, but also in respects of the domains (market verticals). Data are extracted from the lake to feed a massive farm of GPUs to perform training and inference tasks. The two critical points are data management capabilities and performance. In this talk, we will present the vision of DDN to provide a structured data lake Datalake along the lines of the data lakehouse concept without making any compromise on performance.
 							</p>
+							<h4> <a href="material/2024_per3s_NCP_storage_architecture.pdf">Slides of the presentation</a>. </h4>
 						</div>
 
 					</div>
@@ -467,6 +472,7 @@ We propose VoliMem, a user-space runtime that relies on virtualization to provid
 							<h2> DAOS Community Update </h2>
 							<h3> Johann Lombardi, Senior Storage Architect</h3>
 							<p> This presentation will provide an overview of the DAOS architecture and how it has evolved over time to grow beyond persistent memory. The DAOS performance leadership will then be showcased via recent performance results from IO500. Finally, we will present the structure of the DAOS Foundation and some interesting upcoming DAOS features.</p>
+							<h4> <a href="material/2024_per3s_DAOS.pdf">Slides of the presentation</a>. </h4>
 						</div>
 
 						<!-- program divider -->
@@ -484,6 +490,7 @@ We propose VoliMem, a user-space runtime that relies on virtualization to provid
 							<h2> Large Scale Workflow in the EXA-AToW project</h2>
 							<h3> François Bodin, IRISA </h3>
 							<p> The EXA-AToW project investigates large-scale scientific workflows as a collaborative system of systems. In this perspective, workflows are distributed across various infrastructures, necessitating a cohesive approach that aligns with the cybersecurity constraints of each system. Moreover, to orchestrate workflows and manage data logistics effectively, we are developing the concept of a "Machine-Actionable Data Management Plan.</p>
+							<h4> <a href="material/2024_per3s_Eax_AToW_F_Bodin.pdf">Slides of the presentation</a>. </h4>
 						</div>
 
 						<!-- program divider -->
@@ -529,6 +536,7 @@ We propose VoliMem, a user-space runtime that relies on virtualization to provid
 							<h2> The storage challenge of SKA's Science Data Processing </h2>
 							<h3> Shan Mignot, Observatoire Cote d'Azur </h3>
 							<p> The two SKA radio-telescopes currently under construction in South Africa and Australia will observe the Universe, respectively in a medium frequency range (Mid: 350 MHz-15.4 GHz) and a low one (Low: 50-350 MHz), using phased arrays of antennas. For the purpose of achieving high angular resolution and extreme sensitivity, these arrays are planned to total 197 15m parabolas for Mid and 512 stations comprising 256 antennas each for Low by the end of phase 1 of the construction. Digitising the incoming radio waves at sub-nanosecond resolution will lead to 18.7 and 1700 Tb/s of raw data. Managing such data flows will require significant computing and storage capabilities in order to reduce them for transmission, archiving and analysis. The SKA relies on three infrastructures to condition, reduce and finally analyse this data for each telescope: the Central Signal Processor, the Science Data Processor and the Science Regional Centre Network. I will present SKA’s overall data management then focus on the Science Data Processor in terms of volumes, access and analysis of the data.</p>
+							<h4> <a href="material/2024_per3s_SKA_Shan_Mignot.pdf">Slides of the presentation</a>. </h4>
 						</div>
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
