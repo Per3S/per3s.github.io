@@ -399,6 +399,8 @@ In this talk, I will present an overview of different techniques we developed to
 							<h2> Tracing for Exascale </h2>
 							<h3> Catherine Guelque, Télécom SudParis </h3>
 							<p> Traces are used in HPC for post-mortem performance analysis. It is a useful tool for investigating performance problems of applications. However, identifying a performance bottleneck often requires collecting lots of information, which causes the trace to become huge. This problem gets worse for large-scale applications that run many threads for a long time.  In addition to the problem of storing these large traces, another problem arises when analyzing them to identify problems. The analysis tool needs to process gigabytes, or even terabytes of data, which is time-consuming. However, it has been shown that many HPC applications have recurring patterns, that time data is the heaviest part of a trace, and that similar events have similar duration, meaning they can be efficiently compressed.  We propose a new trace format named Pallas, which uses the regularity of HPC applications to provide both quick and efficient post-mortem analysis and light traces.  Pallas is a library that provides tracing tools with event storage functionalities. When writing a trace, Pallas automatically detects patterns, and stores statistical data for later analysis. The trace is then stored by separating the timestamps from the structure. This allows loading and analyzing the structure separately from the timestamps, which grants near-instantaneous analysis when the timestamps are not needed.</p>
+							<h4> <a href="material/2024_per3s_cathering_guelque.pdf">Slides of the presentation</a>. </h4>
+							<h4> <a href="material/2024_per3s_catherine_guelque_poster.pdf">Poster</a>. </h4>
 						</div>
 
 						<!-- program divider -->
@@ -521,6 +523,7 @@ We propose VoliMem, a user-space runtime that relies on virtualization to provid
 							<h2>  Research on HPC I/O in the context of the PEPR NumPEx project</h2>
 							<h3> Francieli Boito, University of Bordeaux </h3>
 							<p> The French NumPEx project aims at conceiving and developing the software stack of future exascale systems. In this talk, I will present an overview of the activities planned to prepare the exascale I/O system. The goal is a system that can adapt to applications - and not the other way around - through smart scheduling and resource allocation decisions.</p>
+							<h4> <a href="material/2024_per3s_Francieli_Boito.pdf">Slides of the presentation</a>. </h4>
 						</div>
 
 						<!-- program divider -->
@@ -554,7 +557,8 @@ We propose VoliMem, a user-space runtime that relies on virtualization to provid
 							<h3> Jakob Lüttgau, INRIA</h3>
 							<p> Scientific applications utilize numerous software and hardware layers to efficiently access data. This is challenging for I/O optimization because of the need to instrument and correlate information across multiple layers. The Darshan characterization tool seeks to address this challenge by providing efficient, transparent, and compact runtime instrumentation of many common I/O interfaces. While there are command-line tools to generate actionable insights and summary reports, the extreme diversity of today’s scientific applications means that not all applications are well served by one-size-fits-all analysis tools.
 
-In this talk we present PyDarshan and IOBAT, to enable agile I/O analysis through Python-based libraries and novel interactive tools for I/O performance data. PyDarshan caters to both novice and advanced users by offering ready-to-use HTML reports as well as a rich collection of APIs to facilitate custom analyses. We demonstrate the effectiveness through multiple real-world analysis use cases</p>
+In this talk we present PyDarshan and IOBAT, to enable agile I/O analysis through Python-based libraries and novel interactive tools for I/O performance data. PyDarshan caters to both novice and advanced users by offering ready-to-use HTML reports as well as a rich collection of APIs to facilitate custom analyses. We demonstrate the effectiveness through multiple real-world analysis use cases.</p>
+							<h4> <a href="material/2024_per3s_jakob_Luettgau.pdf">Slides of the presentation</a>. </h4>
 						</div>
 					</div>
 			</div>
