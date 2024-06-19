@@ -352,6 +352,7 @@ In this talk, I will present an overview of different techniques we developed to
 							<h2> GrIOt: Graph-based Modeling of HPC Application I/O Call Stacks for Predictive Prefetch </h2>
 							<h3> Louis-Marie Nicolas, ENSTA / Atos </h3>
 							<p> Modern High Performance Computing (HPC) storage systems use heterogeneous storage technologies organized in tiers to find a compromise between capacity, performance, and cost. In these systems, prefetching is a common technique used to move the right data at the right moment from a slow to a fast tier to improve the overall performance while using the costly high-performance tier only when needed. Effective prefetching requires precise knowledge of the application I/O patterns. This knowledge can be extracted through the source code, I/O tracing tools or I/O functions call stacks. State-of-the-art solutions based on the latter approach mainly focus on applications with regular I/O profiles to avoid scalability issues due to the grammar-based techniques used. In this paper, we present an approach based on I/O call stacks that models I/O patterns for both regular and irregular applications, thanks to the use of directed graphs. We present different models for prefetching. Our models were used to predict the next I/O call stack on two real HPC applications and one synthetic workload with an accuracy of up to 98%, while keeping a low overhead. </p>
+							<h4> <a href="material/2024_per3s_Louis_Marie_Nicolas.pdf">Slides of the Poster</a>. </h4>
 						</div>
 
 						<!-- program divider -->
@@ -436,6 +437,8 @@ We propose VoliMem, a user-space runtime that relies on virtualization to provid
 							<h3> Thomas Collignon, Qarnot / INRIA  Spiral</h3>
 							<h4> Using Control Theory to Reduce FileSystem Congestion Caused by Unpredictable I/O in Cloud Computing</h4>
 							<p> In the context of distributed cloud computing systems, computing nodes often share stockage resources through shared file systems. Some computations can have strict requirements regarding I/O so it appears necessary to avoid any congestion or saturation of the file system. It can be mitigated with an a priori knowledge of the I/O profiles of computing jobs and traditional scheduling methods. However, in some contexts of cloud computing, like the Qarnot one, the same storage resources can be used to perform lower priority tasks than calculations such as downloading input data for next tasks, deleting cached data or task checkpointing. Those additional tasks generate inherently dynamic and unpredictable traffic that can disturb efficiently established scheduling strategies. This can lead to a performance degradation and an energy overconsumption that we want to avoid. With the induced traffic being unpredictable, we believe that control theory is a good candidate to address this problem. In this work, we explore how suitable this strategy is by choosing the most relevant sensors and actuators for controlling the system dynamically and at runtime.</p>
+							<h4> <a href="material/2024_per3s_Thomas_Collignon_presentation.pdf">Slides of the presentation</a>. </h4>
+							<h4> <a href="material/2024_per3s_Thomas_Collignon_poster.pdf">Slides of the Poster</a>. </h4>
 						</div>
 					</div>
 
