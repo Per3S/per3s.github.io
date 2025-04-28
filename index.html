@@ -135,7 +135,8 @@ Communications and submissions may be made either in French or in English. </p>
 
             <h3> Important dates </h3>
             <ul>
-            <li> Submission of abstracts from April 15 until April 30 </li>
+            <li> Submission of abstracts from April 15 until May 7th </li>
+	    <li> Two paragraph, a short bio and title of the poster to be sent to: <a href="mailto:per3s.contact@gmail.com">per3s.contact@gmail.com</a> </li>
             <li> Notifications are made to authors within 3 days of submission </li>
             <li> Workshop on May 23th </li>
             </ul>
@@ -191,7 +192,7 @@ Communications and submissions may be made either in French or in English. </p>
 						 <li>8h30-9h00 		Participants Welcoming </li>	
 						 <li>9h00-11h00 	Cloud and Storage </li>	
 						 <li>11h00-11h20 	Break </li>	
-						 <li>11h20-12h00 	Distinguished talks </li>	
+						 <li>11h20-12h00 	Young Researchers Distinguished talks </li>	
 						 <li>12h30-13h00 	Flash presentations to introduce posters</li>	
 						 <li>12h30-14h00	** Lunch and Posters ** </li>	
 						 <li>14h00-16h00 	HPC Storage and Lustre </li>	
@@ -290,16 +291,16 @@ Communications and submissions may be made either in French or in English. </p>
 
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/female_speaker.png" class="img-responsive" alt="program">
+							<img src="images/Jana_Toljaga.jpeg" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
 								<span><i class="fa fa-clock-o"></i> 10h20</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h2> Title to be announced </h2>
-							<h3> TBA </h3>
-							<p> Abstract to be provided </p> 
+							<h2> VolipMem: a system-level PMEM Runtime</h2>
+							<h3> Jana Toljaga </h3>
+							<p> Persistent memory (PMEM) offers durability at byte granularity and operates at nearly the speed of volatile memory. While this technology holds great promise for improving performance in large databases and analytics systems, current PMEM runtimes fail to provide a simple interface. This is because developers must manually specify the write set of a failure-atomic block. To avoid the burden of manually specifying the write set, we propose to use low-level hardware features managed by the operating system. To access these features, we isolate the system part of a PMEM runtime, and define three new system primitives: two to define a failure-atomic section and one to recover and map a PMEM in a process. We implemented this interface in VolipMem, which leverages virtualization to expose a page table in a process. We integrated VolipMem into three language runtimes, and evaluated these runtimes with two databases and several libraries. Our results show that VolipMem is both easy to use and efficient.</p> 
 						</div>
 
 						<!-- program divider -->
@@ -335,7 +336,7 @@ Communications and submissions may be made either in French or in English. </p>
 
 					<div role="tabpanel" class="tab-pane" id="distinguished">
 						<!-- program speaker here -->
-						<h3> 11h20-12h00 Distinguished Talks</h3>
+						<h3> 11h20-12h00 Young Researchers Distinguished Talks</h3>
 						<div class="col-md-2 col-sm-2">
 							<img src="images/Louis-Marie-Nicolas.png" class="img-responsive" alt="program">
 						</div>
@@ -551,9 +552,9 @@ In this talk, we will introduce the main concepts, the intitial user interfaces 
 								<span><i class="fa fa-clock-o"></i> 15h00</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h2> Mochi Methodology to Enable Dynamic HPC Data Services</h2>
+							<h2> Ten years of Mochi data services for HPC: a retrospective</h2>
 							<h3> Matthieu Dorier </h3>
-							<p> Abstract to be provided </p> 
+							<p> Over the last 10 years, the Mochi project has explored the notion of composition to foster research and development of HPC data services. Adopted by an increasing number of international users, its collection of components and its methodology allow for rapid development of new data services tailored to specific use cases and applications. In this talk we will look back on this decade of research in and around Mochi, providing a critical retrospective with lessons learned and perspectives for the future of HPC data service research. </p> 
 						</div>
 
 						<!-- program divider -->
@@ -583,9 +584,9 @@ In this talk, we will introduce the main concepts, the intitial user interfaces 
 								<span><i class="fa fa-clock-o"></i> 15h40 </span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h2> IO-Set:Simple and efficient approaches for I/O bandwidth management </h2>
+							<h2> A Deep Look Into the Temporal I/O Behavior of HPC Applications </h2>
 							<h3> Luan Teylo </h3>
-							<p> Abstract to be provided </p> 
+							<p> The increasing gap between compute and I/O speeds in high-performance computing (HPC) systems imposes the need for techniques to improve applications’ I/O performance. Such techniques must rely on assumptions about I/O behavior in order to efficiently allocate I/O resources such as burst buffers, to schedule accesses to the shared parallel file system or to delay certain applications at the batch scheduler level to prevent contention, for instance. In this paper, we verify these common assumptions about I/O behavior, specifically about temporal behavior, using over 440,000 traces from real HPC systems. By combining traces from diverse systems, we characterize the behaviors observed in real HPC workloads. Among other findings, we show that I/O activity tends to last for a few seconds, and that periodic jobs are the minority, but responsible for a large portion of the I/O time. Furthermore, we make projections for the expected improvement yielded by popular approaches for I/O performance improvement. Our work provides valuable insights to everyone working to alleviate the I/O bottleneck in HPC. </p> 
 						</div>
 
 						<!-- program divider -->
