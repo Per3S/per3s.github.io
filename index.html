@@ -232,7 +232,7 @@ Communications and submissions may be made either in French or in English. </p>
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
 							<h2> Design and Implementation of a Fast Persistent Key-Value Store</h2>
-							<h3> Baptiste Lepers </h3>
+							<h3> Baptiste Lepers, INRIA </h3>
 							<p> Abstract to be provided </p>
 						</div>
 						
@@ -248,7 +248,7 @@ Communications and submissions may be made either in French or in English. </p>
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
 							<h2> Title to be announced </h2>
-                            				<h3> Valentin Honoré</h3>
+                            				<h3> Valentin Honoré, ENSIEE</h3>
 							<p>  Abstract to be provided </p>
 						</div>
 
@@ -265,7 +265,7 @@ Communications and submissions may be made either in French or in English. </p>
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
 							<h2>  Phobos Parallel Heterogenous OBject Store </h2> 
-							<h3> Alexandru Dobrila (HIVE)</h3>
+							<h3> Alexandru Dobrila, HIVE</h3>
                             				<p> TBA</p> 
 						</div>
 
@@ -282,7 +282,7 @@ Communications and submissions may be made either in French or in English. </p>
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
 							<h2> VolipMem: a system-level PMEM Runtime</h2>
-							<h3> Jana Toljaga </h3>
+							<h3> Jana Toljaga, Institut Polytechnique de Paris </h3>
 							<p> Persistent memory (PMEM) offers durability at byte granularity and operates at nearly the speed of volatile memory. While this technology holds great promise for improving performance in large databases and analytics systems, current PMEM runtimes fail to provide a simple interface. This is because developers must manually specify the write set of a failure-atomic block. To avoid the burden of manually specifying the write set, we propose to use low-level hardware features managed by the operating system. To access these features, we isolate the system part of a PMEM runtime, and define three new system primitives: two to define a failure-atomic section and one to recover and map a PMEM in a process. We implemented this interface in VolipMem, which leverages virtualization to expose a page table in a process. We integrated VolipMem into three language runtimes, and evaluated these runtimes with two databases and several libraries. Our results show that VolipMem is both easy to use and efficient.</p> 
 						</div>
 
@@ -345,7 +345,7 @@ Communications and submissions may be made either in French or in English. </p>
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
 							<h2>DVFS for HPC I/O optimization: a Microbenchmarking Approach</h2>
-							<h3> Louis-Marie Nicolas </h3>
+							<h3> Louis-Marie Nicolas, ATOS/EVIDEN </h3>
 							<p> Abstract to be provided </p> 
 						</div>
 
@@ -362,7 +362,7 @@ Communications and submissions may be made either in French or in English. </p>
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
 							<h2> Pallas: a generic trace format for large HPC trace analysis</h2>
-							<h3> Catherine Guelque </h3>
+							<h3> Catherine Guelque, TelecomSudParis </h3>
 							<p> Identifying performance bottlenecks in a parallel application is tedious, especially because it requires analyzing the behaviour of various software components, as bottlenecks may have several causes and symptoms. For example, a load imbalance may cause long MPI waiting times, or contention on disk may degrade the performance of I/O operations. Detecting a performance problem means investigating the execution of an application and applying several performance analysis techniques. To do so, one can use a tracing tool to collect information describing the behaviour of the application. Tracing applications may alter the performance of the application, and can create thousands of heavy trace files, especially at a large scale. Most importantly, the post-mortem analysis needs to load these thousands of trace files in memory, and process them. This quickly becomes impractical for large scale applications, as memory gets exhausted and the number of opened files exceeds the system capacity.
 We propose PALLAS, a generic trace format tailored for conducting various post-mortem performance analysis of traces describing large executions of HPC applications. During the execution of the application, PALLAS collects events and detects their repetitions on-the-fly. When storing the trace to disk, PALLAS groups the data from similar events or groups of events together in order to later speed up trace reading. We demonstrate that the PALLAS online detection of the program structure does not significantly degrade the performance of the applications. Moreover, the PALLAS format allows faster trace analysis compared to other evaluated trace formats. Overall, the PALLAS trace format allows an interactive analysis of a trace that is required when a user investigates a performance problem.</p> 
 						</div>
@@ -380,7 +380,7 @@ We propose PALLAS, a generic trace format tailored for conducting various post-m
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
 							<h2> Characterization of IO interferences</h2>
-							<h3> Méline Trochon </h3>
+							<h3> Méline Trochon, INRIA / DDN </h3>
 							<p> Abstract to be provided </p> 
 						</div>
 
@@ -397,7 +397,7 @@ We propose PALLAS, a generic trace format tailored for conducting various post-m
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
 							<h2> Adaptive Layer Compression and Storage with QoS-Aware loading for LLM Serving</h2>
-							<h3> Meriem BOUZOUAD </h3>
+							<h3> Meriem BOUZOUAD, ENSTA </h3>
 							<p> Today, large language models have demonstrated their strengths in various tasks ranging from reasoning, code generation or complex problem solving. However, this advancement comes with high computational cost, and requires considerable memory to store the model parameters and request context, making it challenging to deploy these models on edge devices to ensure real-time responses and data privacy.  The rise of edge accelerators has significantly boosted on-device processing capabilities; however, memory is still a major bottleneck, a problem that is especially significant in large language models with high memory requirements, when it is unclear whether using all model layers is crucial for maintaining generation quality. In addition to that, the varying workloads on edge devices call for an adaptive solution for the efficient utilization of hardware resources. In this paper, we propose a flexible layer-wise compression approach that produces multiple model variants. Our solution leverages a smart storage mechanism to ensure efficient storage and rapid loading of the most appropriate variant tailored to the Quality of Service (QoS) requirements and the dynamic workload of the system. </p> 
 						</div>
 						<!-- program divider -->
@@ -534,7 +534,7 @@ In this talk, we will introduce the main concepts, the intitial user interfaces 
 							</h6>
 							<h2> Exabyte for ExaScale and other storage systems </h2>
 							<h3> An overview of Juelich Supercomputing Centre Storage landscape </h3>
-							<h3> Salem el Sayed </h3>
+							<h3> Salem el Sayed, ForschungsZentrum Jülich </h3>
 							<p> In 2024, the Juelich Supercomputing Centre successfully deployed the sixth iteration of its central storage system, JUelich STorage (JUST)6, a 154 PiB disk storage system based on IBM's Storage Scale System 6000. This milestone was achieved after migrating over 32 PiB of data to the new infrastructure. The Centre is now expanding its storage capabilities with the deployment of the 300 PiB disk-based ExaSTORE and 29 PiB NVMe-based ExaFLASH systems, both designed to support the upcoming Exascale system JUPITER. This presentation will provide an overview of the Juelich storage landscape, highlighting the challenges and strategies for deploying, migrating, and maintaining complex storage infrastructures at scale.  </p> 
 						</div>
 
@@ -552,7 +552,7 @@ In this talk, we will introduce the main concepts, the intitial user interfaces 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
 							<h2> Ten years of Mochi data services for HPC: a retrospective</h2>
-							<h3> Matthieu Dorier </h3>
+							<h3> Matthieu Dorier, Argonne National Laboratory </h3>
 							<p> Over the last 10 years, the Mochi project has explored the notion of composition to foster research and development of HPC data services. Adopted by an increasing number of international users, its collection of components and its methodology allow for rapid development of new data services tailored to specific use cases and applications. In this talk we will look back on this decade of research in and around Mochi, providing a critical retrospective with lessons learned and perspectives for the future of HPC data service research. </p> 
 						</div>
 
@@ -568,7 +568,7 @@ In this talk, we will introduce the main concepts, the intitial user interfaces 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
 							<h2> Phobos Parallel Heterogenous OBject Store</h2>
-							<h3> Gauthier Evraerd </h3>
+							<h3> Gauthier Evraerd, CEA/DAM </h3>
                             				<p> Phobos, standing for Parallel Heterogeneous OBject Store, is a software designed to handle large volumes of data across different storage technologies. It was firstly designed to manage tape storage, thus offering tape lifecycle features such as repack, but is also able to store data on POSIX and RADOS systems, which can be used as cache systems before tape archival. Multiple interfaces were developped to use Phobos as an HSM-end backend, like Lustre and iRODS. This presentation will update the current status of Phobos development and detail some new features like the object copy management.</p> 
 						</div>
 
@@ -584,7 +584,7 @@ In this talk, we will introduce the main concepts, the intitial user interfaces 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
 							<h2> A Deep Look Into the Temporal I/O Behavior of HPC Applications </h2>
-							<h3> Luan Teylo </h3>
+							<h3> Luan Teylo, INRIA </h3>
 							<p> The increasing gap between compute and I/O speeds in high-performance computing (HPC) systems imposes the need for techniques to improve applications’ I/O performance. Such techniques must rely on assumptions about I/O behavior in order to efficiently allocate I/O resources such as burst buffers, to schedule accesses to the shared parallel file system or to delay certain applications at the batch scheduler level to prevent contention, for instance. In this paper, we verify these common assumptions about I/O behavior, specifically about temporal behavior, using over 440,000 traces from real HPC systems. By combining traces from diverse systems, we characterize the behaviors observed in real HPC workloads. Among other findings, we show that I/O activity tends to last for a few seconds, and that periodic jobs are the minority, but responsible for a large portion of the I/O time. Furthermore, we make projections for the expected improvement yielded by popular approaches for I/O performance improvement. Our work provides valuable insights to everyone working to alleviate the I/O bottleneck in HPC. </p> 
 						</div>
 
