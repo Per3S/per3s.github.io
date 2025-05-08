@@ -407,7 +407,7 @@ We propose PALLAS, a generic trace format tailored for conducting various post-m
 
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/male_speaker.png" class="img-responsive" alt="program">
+							<img src="images/female_speaker.png" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
@@ -423,16 +423,26 @@ We propose PALLAS, a generic trace format tailored for conducting various post-m
 
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/female_speaker.png" class="img-responsive" alt="program">
+							<img src="images/male_speaker.png" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
 								<span><i class="fa fa-clock-o"></i> 12h15</span> 
 								<span><i class="fa fa-map-marker"></i> Plenary Session</span>
 							</h6>
-							<h2> Title to be announced</h2>
-							<h3> TBA </h3>
-							<p> Abstract to be provided </p> 
+							<h2> FABME: File-Level Placement Policy with Admission Control, Burst Prefetching, and Multi-Criteria Eviction for HPC Multi-Tier Storage</h2>
+							<h3> Hocine Mahni </h3>
+							<p> High-performance computing (HPC) installations usually front a large-capacity HDD tier with a limited, low-latency SSD tier.
+Data migration is driven by Hierarchical Storage Management (HSM) software such as the Robinhood Policy Engine, which operates strictly at file granularity. This constraint prevents direct reuse of the many block-level cache algorithms proposed in the literature.
+Our previous multi-criteria replacement policy, MC-ARC, showed that combining recency, frequency, predicted lifetime and user fairness at file scope can outperform classical block caches. Analysis of production traces nevertheless uncovered three recurring pathologies:
+(P1) cache pollution by very large or rarely used files;
+(P2) post-burst persistence of files whose references occur in short, periodic I/O bursts;
+(P3) thrashing when several large files alternate and collectively overflow SSD capacity.
+We introduce FABME—a new file-level placement policy that preserves MC-ARC’s multi-criteria spirit while explicitly addressing P1–P3. Running fully on-line and relying solely on metadata already captured by Robinhood changelogs, FABME fuses three components:
+Admission control: on every miss, the policy decides whether to admit the file to SSD or confine it to HDD, using file size, access density, inactivity window, and a benefit–cost estimate;
+Burst-aware prefetch and eviction: a lightweight detector predicts periodic bursts, triggers just-in-time prefetching, and schedules early eviction to avoid post-burst pollution;
+MC-ARC multi-criteria eviction: for admissible files, the final victim is selected with the original recency–frequency–lifetime–fairness score.
+Ongoing experiments on Yombo, Synthesized Google I/O Traces and IBM ObjectStoreTrace, executed with our open two-tier simulator, will report hit rate, trace-processing time and migration overhead. </p> 
 						</div>
 
 						<!-- program divider -->
