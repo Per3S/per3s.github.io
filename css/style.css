@@ -262,7 +262,7 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../images/paris_black_and_white.png') 10% 0 repeat-y fixed;
+    background: url('../images/couvent-des-cordeliers.jpg') 10% 0 repeat-y fixed;
     -webkit-background-size: cover;
 /*    background-size: cover; */
  background-size: 100% auto;
@@ -527,7 +527,7 @@ footer {
    Venir section              
 -----------------------------------------*/
 #venir {
-    background: url('../images/carte_maison_des_mines_et_des_ponts.png') 100% 0 repeat-y fixed;
+    background: url('../images/plan-couvent-des-cordeliers.png') 100% 0 repeat-y fixed;
     background-size: cover;
     background-position: center center;
     padding-top: 7rem;
