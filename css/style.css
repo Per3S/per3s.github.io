@@ -531,18 +531,14 @@ footer {
    Venir section              
 -----------------------------------------*/
 #venir {
-    background: url('../images/plan-couvent-des-cordeliers-paysage.png') right top no-repeat !important;
-    background-size: contain !important;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+  background-image: url('../images/plan-couvent-des-cordeliers-paysage.png') !important;
+  background-position: right top !important;
+  background-repeat: no-repeat !important;
+  background-size: 60% auto !important;
+  /* background-size: contain !important; */
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
-
-#venir {
-  padding-top: 12px;
-  padding-bottom: 18px;
-}
-
-
 
 /*---------------------------------------
    Sponsors section              
