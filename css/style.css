@@ -86,7 +86,7 @@ footer {
 
 #presentation h3,
 #detail h3, #video h3,
-#enregistrement h3,
+#registration h3,
 #venir h3,
 #contact h3 {
     padding-bottom: 12px;
@@ -418,9 +418,9 @@ footer {
 
 
 /*---------------------------------------
-    Enregistrement section              
+    Registration section              
 -----------------------------------------*/
-#enregistrement{
+#registration{
     background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
@@ -428,7 +428,7 @@ footer {
     color: #ffffff;
 }
 
-#enregistrement .form-control {
+#registration .form-control {
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 0px;
@@ -436,11 +436,11 @@ footer {
   margin-bottom: 16px;
 }
 
-#enregistrement input {
+#registration input {
   height: 45px;
 }
 
-#enregistrement input[type="submit"] {
+#registration input[type="submit"] {
   background: #f2545f;
   border-radius: 100px;
   border: none;
@@ -451,11 +451,15 @@ footer {
   transition: all 0.4s ease-in-out;
 }
 
-#enregistrement input[type="submit"]:hover {
+#registration input[type="submit"]:hover {
   background: #ffffff;
   color: #222;
 }
 
+#registration {
+  padding-top: 62px;
+  padding-bottom: 18px;
+}
 
 
 /*---------------------------------------
@@ -527,14 +531,13 @@ footer {
    Venir section              
 -----------------------------------------*/
 #venir {
-    background: url('../images/plan-couvent-des-cordeliers.png') 100% 0 repeat-y fixed;
-    background-size: cover;
-    background-position: center center;
+    background: url('../images/plan-couvent-des-cordeliers-paysage.png') right top no-repeat !important;
+    background-size: contain !important;
     padding-top: 7rem;
     padding-bottom: 7rem;
 }
 
-#venir p {
+#venir {
   padding-top: 12px;
   padding-bottom: 18px;
 }
