@@ -250,7 +250,7 @@ Communications and submissions may be made either in French or in English. </p>
 							</h6>
 							<h2>Rethinking the I/O Stack: Fast I/O Completion and User-Space Caching</h2>
                             				<h3>Yu Liang</h3>
-							<p>  TBA </p>
+							<p>  Fast storage exposes software overhead as a key bottleneck in both direct and buffered I/O. This talk presents UnICom (FAST 2026), which enables efficient direct I/O completion under mixed compute- and I/O-intensive workloads. It then draws on our HotStorage 2026 study to show why small buffered requests are particularly sensitive to software overhead, and to examine the challenges of bringing kernel page-cache benefits to user space. </p>
 						</div>
 
 						<!-- program divider -->
@@ -297,6 +297,23 @@ Communications and submissions may be made either in French or in English. </p>
 							<h3> Marc Tranzer, INRIA</h3>
                             				<p> TBA</p> 
 						</div>
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="images/Meline-trochon.jpg" class="img-responsive" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							<h6>
+								<span><i class="fa fa-clock-o"></i> 11h30</span> 
+								<span><i class="fa fa-map-marker"></i> Amphithéâtre Roussy</span>
+							</h6>
+							<h2> Impact of interference from concurrent jobs on checkpointing performance </h2>
+							<h3> Méline Trochin, INRIA / DDN</h3>
+							<p> I/O has been identified as one of the main bottlenecks in HPC. Among the most I/O-intensive operations is checkpointing, which is necessary to save the state of an application and allow it to be restarted at an advanced stage of computation. However, near the parallel file system, concurrency prevents checkpoint phases from reaching the best I/O performance. In this paper, we study I/O interference in this specific context: we look at performance of a checkpoint phase when faced with different interference patterns, exploring aspects such as scale, number of processes, operation, number of files, etc. Through an extensive experimentation, in two systems, we show the impact of these aspects on checkpoint. Moreover, we show that some configurations --- e.g., an application that does random accesses --- lead to degraded system I/O performance. </p>
+						</div>
+
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
 
@@ -375,7 +392,7 @@ Communications and submissions may be made either in French or in English. </p>
 							</h6>
 							<h2> I/O-Cool: Using I/Os for Temperature Regulation When Training on the Edge </h2>
 							<h3> Jalil Boukhobza </h3>
-							<p> TBA </p>
+							<p> This paper is motivated by the observation that edge data intensive applications, in particular AI training, alternate between I/O and compute phases. Notably, we found that processor temperatures consistently decrease during the I/O phases, revealing opportunities to optimize thermal behavior. We propose I/O-Cool, a proactive thermal management strategy for I/O–compute alternating edge workloads that leverages I/Os to maximize cooling opportunities while reducing the need for processor frequency reductions during the compute process </p>
 						</div>
 
 						<!-- program divider -->
@@ -392,7 +409,7 @@ Communications and submissions may be made either in French or in English. </p>
 							</h6>
 							<h2>TOTO: Transparent I/O Tuning for HPC Applications </h2>
 							<h3> Francieli Boito, INRIA </h3>
-							<h3> TBA </h3>
+							<p> High-performance computing applications rely on parallel file systems, and their I/O performance is strongly affected by configuration parameters such as stripe count. However, the ideal stripe count is highly application- and system-dependent, making it difficult to predict and rarely tuned in practice. As a result, substantial I/O performance potential remains unexplored. We present TOTO, a transparent tool that improves I/O performance without requiring application modifications. TOTO intercepts POSIX calls, characterizes application behavior, and uses a machine learning model to select an appropriate stripe count, even for already opened files. We also introduce an allocation algorithm that balances performance and resource occupation, and describe a methodology for training the model once per system using limited data. Our results show that TOTO can improve I/O performance by up to 4.6 times compared to using a default stripe count, while imposing an overhead of at most 9%. Moreover, compared to the state of the art, TOTO can optimize more applications with a lower resource occupation, which is expected to decrease contention in the I/O infrastructure. </p>
 							<p> </p>
 						</div>
 
