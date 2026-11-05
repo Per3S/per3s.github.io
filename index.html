@@ -29,6 +29,13 @@ mark {
  background-color:rgba(242,84,95,0.5);
   color: white;
 }
+
+.speaker-circle {
+    width: 100%;           /* Ensures it fills the column width */
+    aspect-ratio: 1 / 1;   /* Forces the image into a perfect square */
+    object-fit: cover;     /* Crops the image smoothly without stretching it */
+    border-radius: 50%;    /* Turns the square into a circle */
+}
 </style>
 </head>
 <body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
@@ -218,8 +225,6 @@ Communications and submissions may be made either in French or in English. </p>
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="session1">
 						<h3> 9h-10h30  Session 1 </h3>
-                                                <div class="program-divider col-md-12 col-sm-12"></div>
-
 						
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
@@ -229,7 +234,7 @@ Communications and submissions may be made either in French or in English. </p>
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
-								<span><i class="fa fa-clock-o"></i> 9h30 </span> 
+								<span><i class="fa fa-clock-o"></i> 9h00 </span> 
 								<span><i class="fa fa-map-marker"></i> Amphithéâtre Roussy</span>
 							</h6>
 							<h2>Rethinking the I/O Stack: Fast I/O Completion and User-Space Caching</h2>
@@ -245,7 +250,7 @@ Communications and submissions may be made either in French or in English. </p>
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
-								<span><i class="fa fa-clock-o"></i> 10h00 </span> 
+								<span><i class="fa fa-clock-o"></i> 9h30 </span> 
 								<span><i class="fa fa-map-marker"></i> Amphithéâtre Roussy</span>
 							</h6>
 							<h2>Carbon Footprint of Storage in Data Centers: the Impact of Using SSDs for Key-Value Stores</h2> 
@@ -285,6 +290,12 @@ Communications and submissions may be made either in French or in English. </p>
 					<div role="tabpanel" class="tab-pane" id="distinguished">
 						<!-- program speaker here -->
 						<h3> 11h-12h00 Distinguished Young Researchers </h3>
+                                                <div class="program-divider col-md-12 col-sm-12"></div>
+
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+
+						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
 							<img src="images/Marc_Tranzer.jpeg" class="img-responsive" alt="program">
 						</div>
@@ -302,11 +313,11 @@ Communications and submissions may be made either in French or in English. </p>
 
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/Meline-trochon.jpg" class="img-responsive" alt="program">
+							<img src="images/Meline-trochon.jpg" class="img-responsive speaker-circle" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
-								<span><i class="fa fa-clock-o"></i> 11h30</span> 
+								<span><i class="fa fa-clock-o"></i> 11h20</span> 
 								<span><i class="fa fa-map-marker"></i> Amphithéâtre Roussy</span>
 							</h6>
 							<h2> Impact of interference from concurrent jobs on checkpointing performance </h2>
@@ -323,12 +334,13 @@ Communications and submissions may be made either in French or in English. </p>
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
-								<span><i class="fa fa-clock-o"></i> 11h30</span> 
+								<span><i class="fa fa-clock-o"></i> 11h40</span> 
 								<span><i class="fa fa-map-marker"></i> Amphithéâtre Roussy</span>
 							</h6>
 							<h2> VoliStorM: A Crash-Consistent I/O Cache with Two Kernels Instead of Two Caches </h2>
 							<h3> Jana Toljaga, Telecom SudParis</h3>
-							<p> TBA </p>
+							<p> A crash-consistent I/O cache is essential to ensure data integrity while optimizing performance. However, a general-purpose kernel fails to ensure integrity efficiently because of the high cost of synchronizing I/O requests with the many subsystems that rely on the cache. As a consequence, applications bypass the kernel I/O cache to implement a second cache in user space, which introduces overheads and high engineering cost.
+We address these drawbacks by doubling the number of kernels instead of doubling the number of caches. The first kernel is general-purpose, while the second provides an independent I/O stack tailored to efficiently ensure integrity. We implemented this design in VoliStorM using hardware virtualization. Our evaluation shows that, across databases, in-memory cache checkpointing, and language runtimes, VoliStorM outperforms the dual-cache approach while simplifying application code and improving code reuse. </p>
 						</div>
 					</div>
 
@@ -382,21 +394,6 @@ Communications and submissions may be made either in French or in English. </p>
 					<div role="tabpanel" class="tab-pane" id="session2">
 						<!-- program speaker here -->
 						<h3> 14h00-15h30 Session 2</h3>
-						<div class="col-md-2 col-sm-2">
-							<img src="images/Jalil.png" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 14h00</span> 
-								<span><i class="fa fa-map-marker"></i> Amphithéatre Roussy </span>
-							</h6>
-							<h2> I/O-Cool: Using I/Os for Temperature Regulation When Training on the Edge </h2>
-							<h3> Jalil Boukhobza </h3>
-							<p> This paper is motivated by the observation that edge data intensive applications, in particular AI training, alternate between I/O and compute phases. Notably, we found that processor temperatures consistently decrease during the I/O phases, revealing opportunities to optimize thermal behavior. We propose I/O-Cool, a proactive thermal management strategy for I/O–compute alternating edge workloads that leverages I/Os to maximize cooling opportunities while reducing the need for processor frequency reductions during the compute process </p>
-						</div>
-
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
 
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
@@ -407,7 +404,7 @@ Communications and submissions may be made either in French or in English. </p>
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
-								<span><i class="fa fa-clock-o"></i> 9h00 </span> 
+								<span><i class="fa fa-clock-o"></i> 14h00 </span> 
 								<span><i class="fa fa-map-marker"></i> Amphithéâtre Roussy</span>
 							</h6>
 							<h2> NIOVA Distributed Block Storage Architecture</h2>
@@ -418,31 +415,16 @@ Communications and submissions may be made either in French or in English. </p>
 
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/Sven-Breuner.png" class="img-responsive" alt="program">
+							<img src="images/Sven-Breuner.png" class="img-responsive speaker-circle" alt="program" style="width: 100%;">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
-								<span><i class="fa fa-clock-o"></i> 9h00 </span> 
+								<span><i class="fa fa-clock-o"></i> 14h30 </span> 
 								<span><i class="fa fa-map-marker"></i> Amphithéâtre Roussy</span>
 							</h6>
-							<h2> VAST AI OS: an high performance data plaform addressing HPC needs and AI High-Level services Requirements</h2>
+							<h2> VAST Data: From IOPS to Action</h2>
 							<h3> Sven Breuner, VAST Data </h3>
-							<p> The convergence of High-Performance Computing (HPC) and Artificial Intelligence (AI) demands storage architectures capable of massive throughput, low latency, and robust orchestration. This presentation introduces the VAST AI OS, a next-generation data platform utilizing a Disaggregated and Shared-Everything (DASE) architecture to eliminate data silos and resolve traditional performance-capacity trade-offs. By combining Storage Class Memory (SCM) and QLC flash within a unified multi-protocol namespace, VAST ensures deterministic performance at exabyte scales, optimizes GPU utilization, and seamlessly satisfies the rigorous requirements of modern AI and HPC workloads.</p>
-						</div>
-
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/francieli.jpg" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 14h30</span> 
-								<span><i class="fa fa-map-marker"></i> Amphitéatre Roussy</span>
-							</h6>
-							<h2>TOTO: Transparent I/O Tuning for HPC Applications </h2>
-							<h3> Francieli Boito, INRIA </h3>
-							<p> High-performance computing applications rely on parallel file systems, and their I/O performance is strongly affected by configuration parameters such as stripe count. However, the ideal stripe count is highly application- and system-dependent, making it difficult to predict and rarely tuned in practice. As a result, substantial I/O performance potential remains unexplored. We present TOTO, a transparent tool that improves I/O performance without requiring application modifications. TOTO intercepts POSIX calls, characterizes application behavior, and uses a machine learning model to select an appropriate stripe count, even for already opened files. We also introduce an allocation algorithm that balances performance and resource occupation, and describe a methodology for training the model once per system using limited data. Our results show that TOTO can improve I/O performance by up to 4.6 times compared to using a default stripe count, while imposing an overhead of at most 9%. Moreover, compared to the state of the art, TOTO can optimize more applications with a lower resource occupation, which is expected to decrease contention in the I/O infrastructure. </p>
-							<p> </p>
+							<p> Gigantic IOPS numbers are not worth much if the storage system from which they come is not really increasing productivity of the users by modern standards. The convergence of High-Performance Computing (HPC) and Artificial Intelligence (AI) demands storage architectures capable not only of massive throughput, but to overall end-to-end acceleration. Taking into account the complexity of the workflows, acceleration occurs both at the data plane and control plane level. This presentation will address the journey toward time-to-result for real modern scientific workflows"
 						</div>
 
 						<!-- program divider -->
@@ -450,18 +432,21 @@ Communications and submissions may be made either in French or in English. </p>
 
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/female_speaker.png" class="img-responsive" alt="program">
+							<img src="images/maxence_joulin.jpeg" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
 								<span><i class="fa fa-clock-o"></i> 15h00</span> 
 								<span><i class="fa fa-map-marker"></i> Amphitéatre Roussy</span>
 							</h6>
-							<h2> TBA  </h2>
-							<h3>  TBA </h3>
-							<p> TBA </p>
+							<h2> Storage at Bull: The Alice Recoque Experience </h2>
+							<h3> Maxence Joulin, BULL </h3>
+							<p> The Alice Recoque Exascale supercomputer bridges HPC and AI workloads through a unified, multi-tiered storage architecture. By combining a distributed all-flash NVMe performance tier with high-capacity object storage, the system eliminates I/O bottlenecks and guarantees deterministic latency at exabyte scale. Advanced data orchestration seamlessly manages complex data lifecycles, delivering the sustained bandwidth and data mobility required to drive true exascale discovery. </p>
 						</div>
 
+
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
 						<!-- program divider -->
 
 						<div class="program-divider col-md-12 col-sm-12"></div>
@@ -479,69 +464,54 @@ Communications and submissions may be made either in French or in English. </p>
 					<div role="tabpanel" class="tab-pane" id="session3">
 						<h3> 16h00-18h00 Session 3 </h3>
 
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+
+						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/female_speaker.png" class="img-responsive" alt="program">
+							<img src="images/francieli.jpg" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
 								<span><i class="fa fa-clock-o"></i> 16h00</span> 
-								<span><i class="fa fa-map-marker"></i> Amphithéâtre Roussy</span>
+								<span><i class="fa fa-map-marker"></i> Amphitéatre Roussy</span>
 							</h6>
-							<h2>TBA </h2>
-							<h3> TBA </h3>
-							<p> TBA </p>
+							<h2>TOTO: Transparent I/O Tuning for HPC Applications </h2>
+							<h3> Francieli Boito, INRIA </h3>
+							<p> High-performance computing applications rely on parallel file systems, and their I/O performance is strongly affected by configuration parameters such as stripe count. However, the ideal stripe count is highly application- and system-dependent, making it difficult to predict and rarely tuned in practice. As a result, substantial I/O performance potential remains unexplored. We present TOTO, a transparent tool that improves I/O performance without requiring application modifications. TOTO intercepts POSIX calls, characterizes application behavior, and uses a machine learning model to select an appropriate stripe count, even for already opened files. We also introduce an allocation algorithm that balances performance and resource occupation, and describe a methodology for training the model once per system using limited data. Our results show that TOTO can improve I/O performance by up to 4.6 times compared to using a default stripe count, while imposing an overhead of at most 9%. Moreover, compared to the state of the art, TOTO can optimize more applications with a lower resource occupation, which is expected to decrease contention in the I/O infrastructure. </p>
+							<p> </p>
 						</div>
+
 						<!-- program divider -->
 						<div class="program-divider col-md-12 col-sm-12"></div>
 
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/male_speaker.png" class="img-responsive" alt="program">
+							<img src="images/Jalil.png" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
 								<span><i class="fa fa-clock-o"></i> 16h30</span> 
-								<span><i class="fa fa-map-marker"></i> Amphitéatre Roussy</span>
+								<span><i class="fa fa-map-marker"></i> Amphithéatre Roussy </span>
 							</h6>
-							<h2>TBA </h2>
-							<h3>TBA </h3>
-							<p> TBA </p>
+							<h2> I/O-Cool: Using I/Os for Temperature Regulation When Training on the Edge </h2>
+							<h3> Jalil Boukhobza </h3>
+							<p> This paper is motivated by the observation that edge data intensive applications, in particular AI training, alternate between I/O and compute phases. Notably, we found that processor temperatures consistently decrease during the I/O phases, revealing opportunities to optimize thermal behavior. We propose I/O-Cool, a proactive thermal management strategy for I/O–compute alternating edge workloads that leverages I/Os to maximize cooling opportunities while reducing the need for processor frequency reductions during the compute process </p>
 						</div>
 
 
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-
 						<!-- program speaker here -->
 						<div class="col-md-2 col-sm-2">
-							<img src="images/male_speaker.png" class="img-responsive" alt="program">
+							<img src="images/shadi_ibrahim.png" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
 								<span><i class="fa fa-clock-o"></i> 17h00</span> 
 								<span><i class="fa fa-map-marker"></i> Amphitéatre Roussy</span>
 							</h6>
-							<h2> TBA </h2>
-							<h3> TBA </h3>
-							<p> TBA </p>
-						</div>
-
-
-						<!-- program divider -->
-						<div class="program-divider col-md-12 col-sm-12"></div>
-
-						<!-- program speaker here -->
-						<div class="col-md-2 col-sm-2">
-							<img src="images/male_speaker.png" class="img-responsive" alt="program">
-						</div>
-						<div class="col-md-10 col-sm-10">
-							<h6>
-								<span><i class="fa fa-clock-o"></i> 17h30</span> 
-								<span><i class="fa fa-map-marker"></i> Amphitéatre Roussy</span>
-							</h6>
 							<h2> Closing Session: Reflection on storage from the last 10 years to the next ones! </h2>
-							<h3> TBA</h3>
-							<p> TBA </p>
+							<h3> Shadi Ibrahim</h3>
+							<p> Over the past decade, the Performance and Scalability of Storage Systems (Per3S) workshop has served as a critical nexus for academia and industry to address extreme-scale data challenges. This 10-year retrospective examines the profound architectural shifts of the last ten years, including the rise of NVMe, flash-native distributed file systems, and the convergence of HPC and AI storage workloads. By reflecting on key breakthroughs presented throughout past editions, this session contextualizes how the community has successfully navigated the performance-capacity gap. Looking ahead, it outlines the emerging I/O, thermal, and data orchestration challenges that will define the next era of exascale and cloud-native storage infrastructures. </p>
 						</div>
 					</div>
 			</div>
