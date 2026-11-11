@@ -348,16 +348,73 @@ We address these drawbacks by doubling the number of kernels instead of doubling
 						<!-- program speaker here -->
 						<h3> 12h-12h30 Flash presentations poster introduction</h3>
 						<div class="col-md-2 col-sm-2">
-							<img src="images/female_speaker.png" class="img-responsive" alt="program">
+							<img src="images/hocine.jpg" class="img-responsive" alt="program">
 						</div>
 						<div class="col-md-10 col-sm-10">
 							<h6>
 								<span><i class="fa fa-clock-o"></i> 12h00</span> 
 								<span><i class="fa fa-map-marker"></i> Amphitéatre Roussy</span>
 							</h6>
-							<h2> TBA </h2>
-							<h3> TBA  </h3>
-							<p> Abstract to be provided </p> 
+							<h2> RAPID: Regime-Adaptive Detection of Persistent I/O Bursts in HPC Systems </h2>
+							<h3> Hocine Mahni, ENSTA  </h3>
+							<p> High-performance computing (HPC) applications generate highly variable I/O workloads, with periods of intense activity that may increase contention on shared storage systems. Detecting these bursts is challenging because bandwidth levels and temporal patterns change across applications and execution phases. Consequently, a single statistical threshold may miss bursts or classify normal fluctuations as bursts.
+We present RAPID, an adaptive method for detecting persistent I/O bursts using only past observations, without prior model training or workload-specific calibration. RAPID selects between a robust threshold based on the median and interquartile range and a threshold based on the mean and standard deviation, according to recent workload sparsity and periodicity. A temporal persistence criterion filters isolated peaks.
+We evaluate RAPID on 2,400 injected bursts across four controlled workload regimes: stationary, non-stationary, periodic, and sparse. We compare it with four reference methods: a global 95th-percentile threshold (P95), a rolling median-and-median-absolute-deviation (MAD) threshold, a rolling mean-plus-three-standard-deviations threshold, and a mean-plus-k-standard-deviations threshold calibrated on independent burst-free data. Additional experiments vary burst amplitude and duration, while Darshan traces illustrate applicability to real HPC workloads. RAPID achieves a higher overall event-level F1 score than these reference methods. Relative to the rolling mean-plus-three-standard-deviations method, improvements range from approximately 2% to 26% across the evaluated experimental settings.
+These results indicate that adapting detection thresholds to the local statistical characteristics of I/O workloads can improve burst identification. RAPID could inform future I/O-aware scheduling and storage-management decisions; its runtime overhead and operational benefits remain to be evaluated. </p> 
+						</div>
+
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="images/meriem_bouzouad.png" class="img-responsive" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							<h6>
+								<span><i class="fa fa-clock-o"></i> 12h05</span> 
+								<span><i class="fa fa-map-marker"></i>Amphitéatre Roussy</span>
+							</h6>
+							<h2> DeltaLLM: Adapting LLMs for Memory-driven Edge workloads via Layer-wise Precision </h2>
+							<h3> Meriem Bouzouad, ENSTA </h3>
+							<p> Recently, pushing LLM deployment to edge devices for privacy and latency concerns has gained
+significant momentum. However, edge LLMs operate alongside multiple applications and must dynamically adapt to constrained and variable memory availability. When memory pressure is high, LLM models may be swapped out or, in the worst cases, the process may be killed by the operating system, which is dramatic for latency and service continuity. Switching to a smaller model avoids this, but full reload is slow and hurts cold-start latency. It’s also suboptimal when memory later allows the loading of larger, more accurate model.  This paper presents DeltaLLM, a framework that makes it possible to switch between models of different sizes by only loading/unloading the changing layers. By leveraging layer-wise quantization, our system automatically selects the best model quantization that can fit within the available memory, maximizing accuracy and reducing I/O overhead. In addition, Our solution predicts the opportune moment to trigger the switching, thereby avoiding disruption of service continuity. Results show that our strategy reduces I/O time by up to 60% as compared to current strategies, while ensuring a much better utilization of the memory budget. It also better hides the model switching latency thanks to an opportunistic method.</p>
+						</div>
+
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="images/oussama_zaid.jpeg" class="img-responsive" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							<h6>
+								<span><i class="fa fa-clock-o"></i> 12h05</span> 
+								<span><i class="fa fa-map-marker"></i>Amphitéatre Roussy</span>
+							</h6>
+							<h2> Towards Native Vector Search in Temporal Graph Databases for Network Digital Twins </h2>
+							<h3> Oussama Zaid, Orange Research / IRISA </h3>
+							<p>Network digital twins represent telecom infrastructure as a large property graph that evolves
+continuously. Alongside the graph, entities are increasingly described by vector embeddings produced by machine learning models, for example to characterize their behavior. Many analyses need both: find the entities most similar to a given profile, but only within a given part of the network, and possibly as the network was at some point in the past. Today, this requires combining a graph database with a separate vector store. Vectors are copied outside the graph, the vector index only reflects the current state, and the two systems are queried independently, with no shared optimization.  
+This PhD work, conducted within Orange's Thing'in digital twin platform, aims to bring vector search natively into a temporal graph database, so that graph, vectors and their history are stored and queried by a single system. It first addresses storage: how to keep vectors and their similarity indexes inside a temporal graph database so that past states remain queryable, without rebuilding indexes from scratch and with controlled storage overhead. It then addresses query processing: how to execute queries that combine graph traversal and similarity search efficiently, by letting the graph query engine take both into account rather than treating vector search as an external call.  The poster will present the motivation from Orange's network digital twin use cases, the positioning with respect to existing graph and vector systems, the current state of a prototype built on Clock-G, a temporal graph management system, and the open problems we are exploring. </p>
+						</div>
+
+						<!-- program divider -->
+						<div class="program-divider col-md-12 col-sm-12"></div>
+
+						<!-- program speaker here -->
+						<div class="col-md-2 col-sm-2">
+							<img src="images/elyas_el_idrissi.jpeg" class="img-responsive" alt="program">
+						</div>
+						<div class="col-md-10 col-sm-10">
+							<h6>
+								<span><i class="fa fa-clock-o"></i> 12h05</span> 
+								<span><i class="fa fa-map-marker"></i>Amphitéatre Roussy</span>
+							</h6>
+							<h2> Réduction des coûts de reconstruction dans les systèmes de stockage distribué par hybridation de codes d'effacement </h2>
+							<h3> Elyas El Idrissi, Université de Picardie Jules Verne / Ugloo </h3>
+							<p> Les codes de Reed–Solomon sont largement utilisés pour assurer la durabilité des données dans les systèmes de stockage distribué, mais la réparation d'un seul fragment perdu exige de lire un volume équivalent à l'ensemble des données utiles de la bande, ce qui pèse fortement sur le réseau et les disques à grande échelle. Le code Hitchhiker, de la famille des codes à piggybacking, réduit efficacement ce coût sans redondance supplémentaire, mais seulement pour les fragments de données. Les codes à récupération locale (LRC) peuvent réduire le coût de réparation de n'importe quel ensemble de fragments, moyennant un surcoût de stockage d'autant plus élevé que les groupes locaux sont petits. Nous proposons HH-LRC, un schéma hybride qui applique la localité aux seules parités globales d'un code Hitchhiker. Les fragments de données sont réparés par piggybacking et les parités globales au sein de petits groupes locaux, ce qui demande, à taille de groupe égale, moins de parités locales qu'un LRC couvrant tous les fragments, et préserve la tolérance aux pannes du code MDS sous-jacent. Une simulation exhaustive des combinaisons de pertes, menée sous les contraintes d'un système de stockage industriel, montre que, pour un surcoût de stockage de 4 à 11 %, HH-LRC réduit la quantité lue par rapport à Reed–Solomon de 43 à 60 % pour une perte et jusqu'à 32 % pour deux pertes. En moyenne, HH-LRC lit ainsi moins que les deux codes hybridés dans toutes les configurations simulées. Une comparaison avec le code MSR Clay confirme par ailleurs que la quantité lue ne suffit pas à comparer des codes : dans les configurations considérées, Clay lit jusqu'à 85 % de moins que Reed–Solomon, mais ses nombreuses sous-bandes multiplient par 45 à 228 les opérations de lecture pour une perte et imposent des fragments d'au moins 11 Mo, contre 32 ko pour HH-LRC. Enfin, une implémentation en C++, qui expose un plan de lecture minimal, indique que la réduction de la quantité lue se traduit aussi par un temps de décodage significativement inférieur à celui de Reed–Solomon.</p>
 						</div>
 
 						<!-- program divider -->
